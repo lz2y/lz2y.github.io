@@ -11,7 +11,7 @@
   
   <title>
     
-      Tag 
+      archive_a: 2021/12 
       
       
       |
@@ -106,81 +106,50 @@
 
 
       <div class="flex-container">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
 
-<!-- LaTex Display -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
+<!-- last: 按年份把文章分组，当前遍历到的年份 -->
+<!-- now: 当前遍历到的文章的发布年份 -->
 
-
-
-  
-
-  
-  <!-- 朋友页 url形式：https://yoursite/friends/ -->
-  <div class="container friend-index">
-    <div class="friend-list">
-      
-        <div class="friend-list-item">
-          <span class="nickname">@ cbase</span>
-          <a href="http://cbase.top/" target="_blank">
-            <span class="site-path">http://cbase.top/</span>
-          </a>
-          <p class="card-meta">
-            
-          </p>
+<div class="container archives">
+  <div class="post-list">
+    
+        <!-- 后续文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2021</span>
+          </h2>
         </div>
       
-        <div class="friend-list-item">
-          <span class="nickname">@ 1u1u</span>
-          <a href="https://www.cnblogs.com/pupububu/" target="_blank">
-            <span class="site-path">https://www.cnblogs.com/pupububu/</span>
+      <div class="post-item" title="Log4j2 远程代码执行漏洞">
+        <div class="time-m-d">12-10</div>
+        <div class="title">
+          <a href="/2021/12/10/Log4j2-%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E/">
+            <span>Log4j2 远程代码执行漏洞</span>
           </a>
-          <p class="card-meta">
-            
-          </p>
         </div>
-      
-        <div class="friend-list-item">
-          <span class="nickname">@ ptr</span>
-          <a href="https://www.cnblogs.com/pupububu/" target="_blank">
-            <span class="site-path">https://www.cnblogs.com/pupububu/</span>
+      </div>
+    
+      <div class="post-item" title="RuoYi可用内存马">
+        <div class="time-m-d">11-27</div>
+        <div class="title">
+          <a href="/2021/11/27/RuoYi%E5%8F%AF%E7%94%A8%E5%86%85%E5%AD%98%E9%A9%AC/">
+            <span>RuoYi可用内存马</span>
           </a>
-          <p class="card-meta">
-            
-          </p>
         </div>
-      
-        <div class="friend-list-item">
-          <span class="nickname">@ r2</span>
-          <a href="https://rookiez996.gitee.io/r2" target="_blank">
-            <span class="site-path">https://rookiez996.gitee.io/r2</span>
+      </div>
+    
+      <div class="post-item" title="HelloWorld">
+        <div class="time-m-d">11-15</div>
+        <div class="title">
+          <a href="/2021/11/15/HelloWorld/">
+            <span>HelloWorld</span>
           </a>
-          <p class="card-meta">
-            
-          </p>
         </div>
-      
-    </div>
-    <div class="markdown-body">
-      
-    </div>
+      </div>
+    
   </div>
-  
-
-  
-
-  
+</div>
 
         <div class="footer">
   <div class="social">
@@ -455,24 +424,6 @@ MathJax = {
 
 
         
-  
-    <div class="share-icon tools-bar-item">
-      <a href="javascript: void(0)" id="share-icon">
-        <i class="iconfont iconshare"></i>
-      </a>
-      <div class="share-content hidden">
-        
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + tags + '&url=' + http%3A%2F%2Fexample.com%2Ffriends%2Findex.html + '" target="_blank" title="Twitter">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        
-        
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/friends/index.html" target="_blank" title="Facebook">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        
-      </div>
-    </div>
   
   
 <script src="/js/shares.js"></script>
